@@ -5,13 +5,18 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:+'
-        classpath 'com.google.gms:google-services:3.1.0'
+            classpath 'com.android.tools.build:gradle:+'
+            classpath 'com.google.gms:google-services:4.1.0'
+        }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven.google.com"
     }
 }
 
-// apply plugin: 'com.google.gms.google-services'
-// class must be used instead of id(string) to be able to apply plugin from non-root gradle file
-ext.postBuildExtras = {
-    apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
-}
+cdvPluginPostBuildExtras.add({
+    apply plugin: 'com.google.gms.google-services'
+})
