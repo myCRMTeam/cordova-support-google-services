@@ -7,8 +7,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <description>Cordova plugin to add google service support</description>
     <license>MIT</license>
     <keywords>cordova</keywords>
-    <repo>https://github.com/zulucoda/cordova-support-google-services</repo>
-    <issue>https://github.com/zulucoda/cordova-support-google-services/issues</issue>
+    <repo>https://github.com/myCRMTeam/cordova-support-google-services</repo>
+    <issue>https://github.com/myCRMTeam/cordova-support-google-services/issues</issue>
 
     <engines>
         <engine name="cordova" version=">=3.5.0"/>
